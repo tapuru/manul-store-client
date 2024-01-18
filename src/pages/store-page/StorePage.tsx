@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { useGetProductsQuery } from '../../store/slices/catalog/productApi';
+import { useGetProductsQuery } from '../../features/products/api/productApi';
 import cl from "./StorePage.module.css";
-import { Layout } from '../../components/ui/layout/Layout';
+import { Layout } from '../../shared/components/ui/layout/Layout';
 import { useDispatch } from 'react-redux';
 import { setCatalogCategory } from '../../store/slices/catalog/catalogSlice';
-import { ProductGrid } from '../../components';
-import { Container } from '../../components/ui';
+import { ProductGrid } from '../../shared/components';
+import { Container } from '../../shared/components/ui';
 
 interface StorePageLayoutProps {
   children?: React.ReactNode;

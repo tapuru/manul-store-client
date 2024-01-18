@@ -1,6 +1,6 @@
-import { Button, Section } from '../../../../components/ui'
-import { ProductSlider } from '../../../../components';
-import { useGetProductsQuery } from '../../../../store/slices/catalog/productApi';
+import { Button, Section } from '../../../../shared/components/ui'
+import { ProductSlider } from '../../../../shared/components';
+import { useGetProductsQuery } from '../../../../features/products/api/productApi';
 
 
 export const ProductsDisplaySection = () => {

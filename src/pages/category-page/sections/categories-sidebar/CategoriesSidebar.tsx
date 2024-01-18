@@ -1,6 +1,6 @@
 import cl from "./CategoriesSidebar.module.css";
 import { ICategory } from '../../../../models';
-import { Card, List, ListItemButton } from '../../../../components/ui';
+import { Card, List, ListItemButton } from '../../../../shared/components/ui';
 import { useNavigate } from 'react-router-dom';
 
 interface CategoriesSidebarProps {

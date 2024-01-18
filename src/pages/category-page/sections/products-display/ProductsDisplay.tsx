@@ -2,9 +2,9 @@ import React from 'react'
 import { useAppSelector } from '../../../../store/hooks'
 import { selectCurrentCatalogCategory } from '../../../../store/slices/catalog/catalogSlice'
 import cl from "./ProductDisplay.module.css";
-import { ProductSlider } from '../../../../components';
-import { useGetProductsQuery } from '../../../../store/slices/catalog/productApi';
-import { AppText, Button, Loader, Section } from '../../../../components/ui';
+import { ProductSlider } from '../../../../shared/components';
+import { useGetProductsQuery } from '../../../../features/products/api/productApi';
+import { AppText, Button, Loader, Section } from '../../../../shared/components/ui';
 
 interface ProductDisplayItemProps {
   categoryName?: string;

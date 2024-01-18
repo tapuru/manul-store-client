@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../../../../components/ui';
+import { Button } from '../../../../../shared/components/ui';
 
 import cl from "./ProductDetails.module.css";
 

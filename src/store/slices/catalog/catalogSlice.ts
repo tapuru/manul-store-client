@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { IBrand, ICategory } from "../../../models";
-import { RootState } from "../..";
+import { RootState } from "../../../app/store";
 
 interface catalogState {
   category: ICategory | null;

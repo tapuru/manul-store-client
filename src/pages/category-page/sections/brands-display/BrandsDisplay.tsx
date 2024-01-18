@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { ICategory } from "../../../../models";
 import cl from "./BrandsDisplay.module.css";
 import { useGetBrandsQuery } from "../../../../store/slices/catalog/brandApi";
-import { Loader } from "../../../../components/ui";
+import { Loader } from "../../../../shared/components/ui";
 
 interface BrandsDisplayProps {
   category: ICategory | undefined;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section, AppText } from '../../../../../components/ui';
+import { Section, AppText } from '../../../../../shared/components/ui';
 import cl from "./ProductSpecifications.module.css";
 
 const testSpecifications = [

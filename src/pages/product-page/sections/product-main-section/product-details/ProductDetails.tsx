@@ -1,4 +1,4 @@
-import { Card } from "../../../../../components/ui";
+import { Card } from "../../../../../shared/components/ui";
 import { IProduct } from "../../../../../models";
 import { ProductActions } from "./ProductActions";
 import cl from "./ProductDetails.module.css";

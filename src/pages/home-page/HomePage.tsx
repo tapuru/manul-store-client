@@ -1,6 +1,6 @@
-import { BannerSlider } from '../../components';
-import { Container, Divider, Section } from '../../components/ui';
-import { Layout } from '../../components/ui/layout/Layout'
+import { BannerSlider } from '../../shared/components';
+import { Container, Divider, Section } from '../../shared/components/ui';
+import { Layout } from '../../shared/components/ui/layout/Layout'
 import { CategorySliderSection } from './components/category-slider/CategorySliderSection';
 import { ProductsDisplaySection } from './components/products-display-section/ProductsDisplaySection';
 

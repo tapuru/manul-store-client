@@ -1,5 +1,5 @@
-import { StarIcon } from "../../../../../components/icons"
-import { Divider, AppText } from "../../../../../components/ui";
+import { StarIcon } from "../../../../../shared/components/icons"
+import { Divider, AppText } from "../../../../../shared/components/ui";
 import { IProduct } from "../../../../../models";
 
 import cl from "./ProductDetails.module.css";

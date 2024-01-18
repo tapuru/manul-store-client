@@ -1,11 +1,11 @@
 import React from 'react'
-import { Layout } from '../../components/ui/layout/Layout'
+import { Layout } from '../../shared/components/ui/layout/Layout'
 import { Header } from '../../modules/header'
-import { LoginForm } from './components/login-form/LoginForm';
+import { LoginForm } from '../../features/user/components/login-form/LoginForm';
 import cl from "./AuthPage.module.css";
-import { Section } from '../../components/ui';
+import { Section } from '../../shared/components/ui';
 import { useLocation } from 'react-router-dom';
-import { RegistrationForm } from './components/registration-form/RegistrationForm';
+import { RegistrationForm } from '../../features/user/components/registration-form/RegistrationForm';
 
 export const AuthPage = () => {
 

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useGetCategoryByNameQuery } from '../../store/slices/catalog/categoryApi';
-import { Layout } from '../../components/ui/layout/Layout';
+import { Layout } from '../../shared/components/ui/layout/Layout';
 import { CategoriesSidebar } from './sections/categories-sidebar/CategoriesSidebar';
 import cl from "./CategoryPage.module.css";
-import { AppText, Container, Loader, Section } from '../../components/ui';
+import { AppText, Container, Loader, Section } from '../../shared/components/ui';
 import { CategoriesDisplay } from './sections/categories-display';
 import { useAppDispatch } from '../../store/hooks';
 import { setCatalogCategory } from '../../store/slices/catalog/catalogSlice';

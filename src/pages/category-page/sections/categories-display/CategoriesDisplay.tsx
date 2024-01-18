@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { CategoryCard } from "../../../../components";
+import { CategoryCard } from "../../../../shared/components";
 import { ICategory } from "../../../../models";
 import cl from "./CategoriesDisplay.module.css";
 

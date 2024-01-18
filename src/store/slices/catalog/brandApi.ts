@@ -1,5 +1,5 @@
 import { IBrand } from "../../../models";
-import { apiSlice } from "../../api/apiSlice";
+import { apiSlice } from "../../../shared/api/apiSlice";
 import { IFindAndCountResponse } from "../../types";
 
 export const brandApiSlice = apiSlice.injectEndpoints({

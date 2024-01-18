@@ -1,11 +1,11 @@
 import { useMemo, useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { useSlider } from '../../../../hooks';
-import { ArrowButton, Loader } from '../../../../components/ui';
-import { ArrowLeftIcon, ArrowRightIcon } from '../../../../components/icons';
+import { useSlider } from '../../../../shared/hooks';
+import { ArrowButton, Loader } from '../../../../shared/components/ui';
+import { ArrowLeftIcon, ArrowRightIcon } from '../../../../shared/components/icons';
 import cl from "./CategorySlider.module.css";
 import { useGetCategoriesQuery } from '../../../../store/slices/catalog/categoryApi';
-import { CategoryCard } from '../../../../components';
+import { CategoryCard } from '../../../../shared/components';
 import { useNavigate } from 'react-router-dom';
 
 

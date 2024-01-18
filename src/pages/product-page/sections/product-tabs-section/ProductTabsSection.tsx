@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Tabs } from '../../../../components/ui'
+import { Tabs } from '../../../../shared/components/ui'
 import { useParams } from 'react-router-dom';
 import { ProductDescription } from './product-description/ProductDescription';
 import { ProductSpecifications } from './product-specifications/ProductSpecifications';

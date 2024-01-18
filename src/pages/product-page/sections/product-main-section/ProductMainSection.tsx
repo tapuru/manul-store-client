@@ -1,8 +1,8 @@
 import React from 'react'
 import cl from "./ProductInfoSection.module.css";
-import { ProductGallery } from './product-gallery/ProductGallery';
+import { ProductGallery } from '../../../../features/products/components/product-gallery/ProductGallery';
 import { ProductDetails } from './product-details/ProductDetails';
-import { useGetProductByIdQuery } from '../../../../store/slices/catalog/productApi';
+import { useGetProductByIdQuery } from '../../../../features/products/api/productApi';
 import { IProduct } from '../../../../models';
 
 interface Props {
