@@ -1,0 +1,36 @@
+@import "../../styles/vars.css";
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  gap: 129px
+}
+
+.formSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.authPicture{
+  animation: slidein 0.5s ease-out;
+  border-radius: 0px 4px 4px 0px;
+  overflow: hidden;
+}
+.authPicture img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

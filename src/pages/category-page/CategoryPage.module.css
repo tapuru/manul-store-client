@@ -1,0 +1,23 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  column-gap: 48px;
+  grid-template-areas: 
+    "title title"
+    "aside main";
+}
+
+.title{
+  min-width: 0;
+  grid-area: title;
+}
+
+.sidebar{
+  min-width: 0;
+  grid-area: aside;
+}
+
+.main {
+  min-width: 0;
+  grid-area: main;
+}

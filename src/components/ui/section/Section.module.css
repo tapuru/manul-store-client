@@ -1,0 +1,32 @@
+.section{
+  padding: 70px 0px;
+}
+
+.sectionItem{
+  margin-bottom: 60px;
+}
+.sectionItem._flex {
+  display: flex;
+  gap: 32px;
+}
+
+
+.sectionItemHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  padding: 24px 0px;
+  flex-basis: 20%;
+  overflow: hidden;
+}
+.title {
+  flex-wrap: wrap;
+  font-size: 3.4rem;
+  line-height: 52px;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+.sectionItemContent {
+  width: 80%;
+}

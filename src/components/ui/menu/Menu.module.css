@@ -1,0 +1,33 @@
+.menu {
+  display: none;
+
+  padding: 5px 5px 25px 5px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-big);
+  background-color: var(--color-background-white);
+
+  position: absolute;
+  top: calc(100% + 5px);
+}
+
+.menu._active {
+  display: block;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuItem {
+  padding: 8px 25px;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  background-color: var(--color-background-white-hover);
+}
+
+.menuHeader {
+  padding: 8px 25px;
+}

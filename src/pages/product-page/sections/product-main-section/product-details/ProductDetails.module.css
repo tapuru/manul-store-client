@@ -1,0 +1,31 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.productInfoRow {
+  display: flex;
+  gap: 16px;
+}
+.rating {
+  display: flex;
+  gap: 8px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.secondaryButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}

@@ -1,0 +1,16 @@
+.wrapper {
+  display: grid;
+  gap: 24px;
+}
+.wrapper._1{
+  grid-template-columns: 1fr;
+}
+.wrapper._2 {
+  grid-template-columns: 1fr 1fr;
+}
+.wrapper._3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.wrapper._4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}

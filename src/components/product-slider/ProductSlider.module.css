@@ -1,0 +1,26 @@
+.slider{
+  width: 100%;
+  position: relative;
+}
+
+.prevButton{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 100;
+}
+.prevButton:active{
+  transform: scale(0.9) translateY(-50%) translateX(-50%);
+}
+
+.nextButton {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) translateX(50%);
+  z-index: 100;
+}
+.nextButton:active {
+  transform: scale(0.9) translateY(-50%) translateX(50%);
+}

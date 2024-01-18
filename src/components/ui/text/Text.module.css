@@ -1,0 +1,55 @@
+
+.text{
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-text-black);
+}
+
+.text_h1{
+  font-size: 5.4rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 6.4rem;
+}
+.text_h2 {
+  font-family: Inter;
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.8rem;
+}
+.text_h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.0rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+.text_price{
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.text_white {
+  color: var(--color-text-white);
+}
+.text_black {
+  color: var(--color-text-black);
+}
+.text_gray {
+  color: var(--color-text-gray);
+}
+.text_inherit {
+  color: inherit;
+}
+
+.text_center{
+  text-align: center;
+}
+.text_left {
+  text-align: left;
+}
+.text_right {
+  text-align: right;
+}

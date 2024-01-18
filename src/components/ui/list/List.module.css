@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label{
+  font-size: 2rem;
+  background-color: transparent;
+  background-color:  var(--color-secondary-2);
+  padding: 10px;
+  font-weight: 600;
+}
+
+.labelButton:hover {
+  color: var(--color-secondary-1);
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0px;
+}
+
+.listItem {
+  background-color: transparent;
+}
+
+.listItem:hover {
+  color: var(--color-secondary-1);
+
+}

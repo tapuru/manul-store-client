@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  width: 500px;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.formHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
