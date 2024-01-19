@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { useGetProductsQuery } from '../../features/products/api/productApi';
+import { useGetProductsQuery } from '../../features/products/api';
 import cl from "./StorePage.module.css";
 import { Layout } from '../../shared/components/ui/layout/Layout';
 import { useDispatch } from 'react-redux';
-import { setCatalogCategory } from '../../store/slices/catalog/catalogSlice';
+import { setCatalogCategory } from '../../features/catalog/model/catalogSlice';
 import { ProductGrid } from '../../shared/components';
 import { Container } from '../../shared/components/ui';
 

@@ -4,7 +4,7 @@ import { useSlider } from '../../../../shared/hooks';
 import { ArrowButton, Loader } from '../../../../shared/components/ui';
 import { ArrowLeftIcon, ArrowRightIcon } from '../../../../shared/components/icons';
 import cl from "./CategorySlider.module.css";
-import { useGetCategoriesQuery } from '../../../../store/slices/catalog/categoryApi';
+import { useGetCategoriesQuery } from '../../../../features/catalog/api';
 import { CategoryCard } from '../../../../shared/components';
 import { useNavigate } from 'react-router-dom';
 

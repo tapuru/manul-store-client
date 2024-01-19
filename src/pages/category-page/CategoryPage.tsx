@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { useGetCategoryByNameQuery } from '../../store/slices/catalog/categoryApi';
+import { useGetCategoryByNameQuery } from '../../features/catalog/api';
 import { Layout } from '../../shared/components/ui/layout/Layout';
 import { CategoriesSidebar } from './sections/categories-sidebar/CategoriesSidebar';
 import cl from "./CategoryPage.module.css";
 import { AppText, Container, Loader, Section } from '../../shared/components/ui';
 import { CategoriesDisplay } from './sections/categories-display';
 import { useAppDispatch } from '../../store/hooks';
-import { setCatalogCategory } from '../../store/slices/catalog/catalogSlice';
+import { setCatalogCategory } from '../../features/catalog/model/catalogSlice';
 import { ProductsDisplay } from './sections/products-display';
 
 interface CategoryPAgeLayoutProps {

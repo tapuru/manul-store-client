@@ -1,15 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { IBrand, ICategory } from "../../../models";
 import { RootState } from "../../../app/store";
+import { Brand, Category } from "../types";
 
 interface catalogState {
-  category: ICategory | null;
-  brand: IBrand | null;
+  category: Category | null;
+  brand: Brand | null;
 }
 
 const initialState: catalogState = {
-  brand: null,
-  category: null
+  category: null,
+  brand: null
 }
 
 export const catalogSlice = createSlice({

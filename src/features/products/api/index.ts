@@ -10,7 +10,7 @@ interface getProductsResponse {
 }
 
 
-const productApi = apiSlice.injectEndpoints({
+export const productApi = apiSlice.injectEndpoints({
   endpoints: (build) => ({
     getProducts: build.query<FindAndCountResponse<Product>, getProductsResponse>({
       query: ({ categoryName, brandId, page, limit }) => ({
@@ -32,4 +32,7 @@ const productApi = apiSlice.injectEndpoints({
   overrideExisting: false
 });
 
-export const { useGetProductsQuery, useGetProductByIdQuery } = productApi
+export const {
+  useGetProductByIdQuery,
+  useLazyGetProductsQuery
+} = productApi;

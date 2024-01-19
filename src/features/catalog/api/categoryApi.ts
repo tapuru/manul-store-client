@@ -1,11 +1,11 @@
-import { ICategory } from "../../../models";
+import { Category } from "../types";
 import { apiSlice } from "../../../shared/api/apiSlice";
-import { IFindAndCountResponse } from "../../types";
+import { FindAndCountResponse } from "../../../shared/api/types";
 
 
 export const categoryApi = apiSlice.injectEndpoints({
   endpoints: (build) => ({
-    getCategories: build.query<IFindAndCountResponse<ICategory>, number | void>({
+    getCategories: build.query<FindAndCountResponse<Category>, number | void>({
       query: (parentCategoryId) => {
 
         if (parentCategoryId) {
@@ -21,7 +21,7 @@ export const categoryApi = apiSlice.injectEndpoints({
         }
       }
     }),
-    getCategoryByName: build.query<ICategory, string | void>({
+    getCategoryByName: build.query<Category, string | void>({
       query: (name) => ({
         url: `/category/${name}`,
       }),

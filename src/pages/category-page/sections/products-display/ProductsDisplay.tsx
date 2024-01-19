@@ -1,9 +1,9 @@
 import React from 'react'
 import { useAppSelector } from '../../../../store/hooks'
-import { selectCurrentCatalogCategory } from '../../../../store/slices/catalog/catalogSlice'
+import { selectCurrentCatalogCategory } from '../../../../features/catalog/model/catalogSlice'
 import cl from "./ProductDisplay.module.css";
 import { ProductSlider } from '../../../../shared/components';
-import { useGetProductsQuery } from '../../../../features/products/api/productApi';
+import { useGetProductsQuery } from '../../../../features/products/api';
 import { AppText, Button, Loader, Section } from '../../../../shared/components/ui';
 
 interface ProductDisplayItemProps {

@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { apiSlice } from "../shared/api/apiSlice";
 import authReducer from "../features/user/model/userSlice";
-import catalogReducer from "../store/slices/catalog/catalogSlice";
+import catalogReducer from "../features/catalog/model/catalogSlice";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 export const store = configureStore({

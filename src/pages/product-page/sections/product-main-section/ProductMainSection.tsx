@@ -2,7 +2,7 @@ import React from 'react'
 import cl from "./ProductInfoSection.module.css";
 import { ProductGallery } from '../../../../features/products/components/product-gallery/ProductGallery';
 import { ProductDetails } from './product-details/ProductDetails';
-import { useGetProductByIdQuery } from '../../../../features/products/api/productApi';
+import { useGetProductByIdQuery } from '../../../../features/products/api';
 import { IProduct } from '../../../../models';
 
 interface Props {

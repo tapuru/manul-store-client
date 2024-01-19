@@ -1,6 +1,6 @@
 import { Button, Section } from '../../../../shared/components/ui'
 import { ProductSlider } from '../../../../shared/components';
-import { useGetProductsQuery } from '../../../../features/products/api/productApi';
+import { useGetProductsQuery } from '../../../../features/products/api';
 
 
 export const ProductsDisplaySection = () => {
