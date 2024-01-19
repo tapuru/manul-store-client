@@ -1,21 +1,26 @@
-import { Layout } from '../../shared/components/ui/layout/Layout'
 import { Container, Section } from '../../shared/components/ui'
-import { ProductMainSection } from './sections/product-main-section'
 import { useParams } from 'react-router-dom'
-import { useGetProductByIdQuery } from '../../features/products/api'
-import { ErrorPage } from '..'
+import { useGetProductByIdQuery } from '../../features/product/api'
+import { ErrorPage } from '../error-page';
 import { ProductTabsSection } from './sections/product-tabs-section'
+import { useEffect } from 'react'
+import { useAppDispatch } from '../../app/store'
+import { setCurrentProduct } from '../../features/product'
+import { SingleProductMain } from '../../wigets/single-product-main';
 
 export const ProductPage = () => {
 
   const { id } = useParams();
+  const dispatch = useAppDispatch();
   const {
     data: product
   } = useGetProductByIdQuery(Number(id));
 
-  if (!product) {
-    console.log(product)
+  useEffect(() => {
+    dispatch(setCurrentProduct(product || null))
+  }, [product])
 
+  if (!product) {
     return (
       <ErrorPage />
     )
@@ -23,16 +28,13 @@ export const ProductPage = () => {
 
 
   return (
-    <Layout>
-      <Container>
-        {JSON.stringify(product)}
-        <Section>
-          <ProductMainSection product={product} />
-        </Section>
-        <Section>
-          <ProductTabsSection />
-        </Section>
-      </Container>
-    </Layout>
+    <Container>
+      <Section>
+        <SingleProductMain />
+      </Section>
+      <Section>
+        <ProductTabsSection />
+      </Section>
+    </Container>
   ) 
 }

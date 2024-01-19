@@ -1,15 +1,14 @@
-import { AdminPage } from "./pages/admin-page";
-import { AuthPage } from "./pages/auth-page";
-import { BasketPage } from "./pages/basket-page";
-import { CategoryPage } from "./pages/category-page";
-import { ComparePage } from "./pages/compare-page";
-import { FavoritesPage } from "./pages/favorites-page";
-import { HomePage } from "./pages/home-page";
-import { ProductPage } from "./pages/product-page";
-import { ProfilePage } from "./pages/profile-page";
-import { SearchPage } from "./pages/search-page";
-import { StorePage } from "./pages/store-page";
-
+import { AdminPage } from "../pages/admin-page";
+import { AuthPage } from "../pages/auth-page";
+import { BasketPage } from "../pages/basket-page";
+import { CategoryPage } from "../pages/category-page";
+import { ComparePage } from "../pages/compare-page";
+import { FavoritesPage } from "../pages/favorites-page";
+import { HomePage } from "../pages/home-page";
+import { ProductPage } from "../pages/product-page";
+import { ProfilePage } from "../pages/profile-page";
+import { SearchPage } from "../pages/search-page";
+import { StorePage } from "../pages/store-page";
 
 export const guestRoutes = [
   { path: "/", component: HomePage },

@@ -1,5 +1,3 @@
-@import "../../styles/vars.css"; 
-
 .footer {
   background-color: var(--color-background-black);
   height: 400px;

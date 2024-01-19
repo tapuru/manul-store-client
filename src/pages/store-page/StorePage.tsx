@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { useGetProductsQuery } from '../../features/products/api';
+import { useGetProductsQuery } from '../../features/product/api';
 import cl from "./StorePage.module.css";
-import { Layout } from '../../shared/components/ui/layout/Layout';
+import { Layout } from '../../app/layout/Layout';
 import { useDispatch } from 'react-redux';
 import { setCatalogCategory } from '../../features/catalog/model/catalogSlice';
 import { ProductGrid } from '../../shared/components';

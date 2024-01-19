@@ -1,7 +1,7 @@
 import React from 'react'
 import { Section } from '../../../../../shared/components/ui'
 import { useParams } from 'react-router-dom'
-import { useGetProductByIdQuery } from '../../../../../features/products/api';
+import { useGetProductByIdQuery } from '../../../../../features/product/api';
 
 export const ProductDescription = () => {
 

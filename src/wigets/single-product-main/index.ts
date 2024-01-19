@@ -1,0 +1,1 @@
+export { SingleProductMain } from "./SingleProductMain";

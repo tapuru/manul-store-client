@@ -1,22 +1,20 @@
-import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
-import { useGetCategoryByNameQuery } from '../../features/catalog/api';
-import { Layout } from '../../shared/components/ui/layout/Layout';
-import { CategoriesSidebar } from './sections/categories-sidebar/CategoriesSidebar';
+import { useParams } from "react-router-dom";
+import { useAppDispatch } from "../../app/store";
+import { CategoriesDisplay, CategoriesSidebar, useGetCategoryByNameQuery } from "../../features/catalog";
+import { setCatalogCategory } from "../../features/catalog/model/catalogSlice";
 import cl from "./CategoryPage.module.css";
-import { AppText, Container, Loader, Section } from '../../shared/components/ui';
-import { CategoriesDisplay } from './sections/categories-display';
-import { useAppDispatch } from '../../store/hooks';
-import { setCatalogCategory } from '../../features/catalog/model/catalogSlice';
-import { ProductsDisplay } from './sections/products-display';
+import { useEffect } from "react";
+import { AppText, Container, Loader, Section } from "../../shared/components/ui";
+import { CategoryProducts } from "../../wigets/category-products";
 
-interface CategoryPAgeLayoutProps {
+
+interface CategoryPageLayoutProps {
   children?: React.ReactNode;
   sidebar?: React.ReactNode;
   title?: string;
 }
 
-const CategoryPageLayout = ({ children, sidebar, title }: CategoryPAgeLayoutProps) => {
+const CategoryPageLayout = ({ children, sidebar, title }: CategoryPageLayoutProps) => {
   return (
     <div className={cl.wrapper}>
       {title && 
@@ -46,29 +44,27 @@ export const CategoryPage = () => {
   }, [category])
 
   return (
-    <Layout>
-      <Container>
-        {isCategoryLoading &&
-          <Loader centered />
-        }
-        {category &&
-          <CategoryPageLayout
-            title={category.name}
-            sidebar={<CategoriesSidebar categoriesList={category.subCategories} />}
-          >
-            <Section>
-              <AppText variant='h2' align="center">Категории</AppText>
-              {isCategoryLoading ? (
-                <Loader centered />
-              ) : (
-                <CategoriesDisplay categoryList={category.subCategories} />
-              )
-              }
-            </Section>
-            <ProductsDisplay />
-          </CategoryPageLayout>
-        }
-      </Container>
-    </Layout>
+    <Container>
+      {isCategoryLoading &&
+        <Loader centered />
+      }
+      {category &&
+        <CategoryPageLayout
+          title={category.name}
+          sidebar={<CategoriesSidebar categoriesList={category.subCategories} />}
+        >
+          <Section>
+            <AppText variant='h2' align="center">Категории</AppText>
+            {isCategoryLoading ? (
+              <Loader centered />
+            ) : (
+              <CategoriesDisplay categoryList={category.subCategories} />
+            )
+            }
+          </Section>
+          <CategoryProducts />
+        </CategoryPageLayout>
+      }
+    </Container>
   )
 }
