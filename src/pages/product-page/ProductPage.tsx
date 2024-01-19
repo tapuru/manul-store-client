@@ -3,7 +3,7 @@ import { Container, Section } from '../../components/ui'
 import { ProductMainSection } from './sections/product-main-section'
 import { useParams } from 'react-router-dom'
 import { useGetProductByIdQuery } from '../../store/slices/catalog/productApi'
-import { ErrorPage } from '..'
+import { ErrorPage } from '../error-page'
 import { ProductTabsSection } from './sections/product-tabs-section'
 
 export const ProductPage = () => {
