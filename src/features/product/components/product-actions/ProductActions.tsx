@@ -1,5 +1,5 @@
 import { Button } from '../../../../shared/components/ui';
-import cl from "./ProductDetails.module.css";
+import cl from "./ProductActions.module.css";
 
 export const ProductActions = () => {
   return (

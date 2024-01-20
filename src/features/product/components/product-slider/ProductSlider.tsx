@@ -21,11 +21,11 @@ export const ProductSlider = ({ productList, slidesPerView = 4 }: ProductSliderP
   return (
     <div className={cl.slider}>
       <Swiper
-        spaceBetween={8}
+        spaceBetween={12}
         slidesPerView={slidesPerView}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
-        style={{ padding: "16px 0px 16px 12px" }}
+        style={{ padding: "24px 10px 24px 16px" }}
         ref={sliderRef}
       >
         {productList?.map(product => (

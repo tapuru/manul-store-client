@@ -73,6 +73,7 @@
 
 .card:hover{
   box-shadow: var(--shadow-big);
+  transform: scale(1.05);
 }
 .card:hover .actions{
   display: flex;

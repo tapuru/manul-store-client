@@ -12,3 +12,4 @@ export { Alert } from "./alert/Alert";
 export { Loader } from "./loader/Loader";
 export { Menu } from "./menu/Menu";
 export { List, ListItemButton } from "./list/List";
+export { Backdrop } from "./backdrop/Backdrop";

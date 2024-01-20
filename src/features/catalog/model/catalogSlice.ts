@@ -3,13 +3,15 @@ import { RootState } from "../../../app/store";
 import { Brand, Category } from "../types";
 
 interface catalogState {
-  category: Category | null;
-  brand: Brand | null;
+  currentCategory: Category | null;
+  currentBrand: Brand | null;
+  mainCategories: Category[] | null;
 }
 
 const initialState: catalogState = {
-  category: null,
-  brand: null
+  currentCategory: null,
+  currentBrand: null,
+  mainCategories: null
 }
 
 export const catalogSlice = createSlice({
@@ -17,7 +19,7 @@ export const catalogSlice = createSlice({
   initialState,
   reducers: {
     setCatalogCategory: (state, action) => {
-      state.category = action.payload;
+      state.currentCategory = action.payload;
     }
   }
 });
@@ -26,5 +28,5 @@ export const { setCatalogCategory } = catalogSlice.actions;
 
 export default catalogSlice.reducer;
 
-export const selectCurrentCatalogCategory = (state: RootState) => state.catalog.category;
-export const selectCurrentCatalogBrand = (state: RootState) => state.catalog.brand;
+export const selectCurrentCatalogCategory = (state: RootState) => state.catalog.currentCategory;
+export const selectCurrentCatalogBrand = (state: RootState) => state.catalog.currentBrand;

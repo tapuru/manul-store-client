@@ -1,0 +1,10 @@
+.wrapper {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr auto;
+}
+
+.sidebar {
+  height: 1000px;
+  background-color: gray;
+}

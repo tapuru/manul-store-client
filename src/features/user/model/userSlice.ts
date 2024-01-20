@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { IUser } from "../../../models";
 import { RootState } from "../../../app/store";
+import { User } from "../types";
 
 interface AuthState {
-  user: IUser | null;
+  user: User | null;
   token: string | null
 }
 const initialState: AuthState = {

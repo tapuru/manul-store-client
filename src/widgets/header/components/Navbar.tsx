@@ -3,9 +3,9 @@ import { HeaderButton } from './HeaderButton';
 import cl from "../Header.module.css"
 import { useNavigate } from 'react-router-dom';
 import { BasketIcon, HeartIcon, ProfileIcon } from '../../../shared/components/icons';
-import { useAppDispatch, useAppSelector } from '../../../store/hooks';
-import { logOut, selectCurrentUser } from '../../../features/user/model/userSlice';
 import { Menu } from '../../../shared/components/ui';
+import { useAppDispatch, useAppSelector } from '../../../app/store';
+import { logOut, selectCurrentUser } from '../../../features/user';
 
 export const Navbar = () => {
 

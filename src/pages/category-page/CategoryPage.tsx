@@ -4,8 +4,8 @@ import { CategoriesDisplay, CategoriesSidebar, useGetCategoryByNameQuery } from 
 import { setCatalogCategory } from "../../features/catalog/model/catalogSlice";
 import cl from "./CategoryPage.module.css";
 import { useEffect } from "react";
-import { AppText, Container, Loader, Section } from "../../shared/components/ui";
-import { CategoryProducts } from "../../wigets/category-products";
+import { AppText, Container, Divider, Loader, Section } from "../../shared/components/ui";
+import { CategoryProducts } from "../../widgets/category-products";
 
 
 interface CategoryPageLayoutProps {
@@ -19,7 +19,8 @@ const CategoryPageLayout = ({ children, sidebar, title }: CategoryPageLayoutProp
     <div className={cl.wrapper}>
       {title && 
         <div className={cl.title}>
-          <AppText variant='h1'>{title}</AppText>
+          <AppText variant='h1' align="center">{title}</AppText>
+          <Divider />
         </div>
       }
       {sidebar && 
@@ -54,7 +55,7 @@ export const CategoryPage = () => {
           sidebar={<CategoriesSidebar categoriesList={category.subCategories} />}
         >
           <Section>
-            <AppText variant='h2' align="center">Категории</AppText>
+            <AppText variant='h2'>Категории</AppText>
             {isCategoryLoading ? (
               <Loader centered />
             ) : (

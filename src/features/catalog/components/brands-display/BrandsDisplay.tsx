@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import { ICategory } from "../../../../models";
+import { Category, useGetBrandsQuery } from "../..";
 import cl from "./BrandsDisplay.module.css";
-import { useGetBrandsQuery } from "../../../../store/slices/catalog/brandApi";
 import { Loader } from "../../../../shared/components/ui";
 
+
 interface BrandsDisplayProps {
-  category: ICategory | undefined;
+  category: Category | undefined;
 }
 
 export const BrandsDisplay = ({ category }: BrandsDisplayProps) => {

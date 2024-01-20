@@ -1,6 +1,8 @@
 .wrapper {
   display: grid;
   gap: 24px;
+  grid-template-rows: auto;
+  height: auto;
 }
 .wrapper._1{
   grid-template-columns: 1fr;
@@ -13,4 +15,7 @@
 }
 .wrapper._4 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.wrapper._listMode{
+  grid-template-columns: 1fr;
 }

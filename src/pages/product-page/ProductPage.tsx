@@ -6,7 +6,7 @@ import { ProductTabsSection } from './sections/product-tabs-section'
 import { useEffect } from 'react'
 import { useAppDispatch } from '../../app/store'
 import { setCurrentProduct } from '../../features/product'
-import { SingleProductMain } from '../../wigets/single-product-main';
+import { SingleProductMain } from '../../widgets/single-product-main';
 
 export const ProductPage = () => {
 

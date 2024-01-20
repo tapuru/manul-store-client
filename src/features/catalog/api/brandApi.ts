@@ -1,4 +1,4 @@
-
+import { Brand } from "../types";
 import { apiSlice } from "../../../shared/api/apiSlice";
 import { FindAndCountResponse } from "../../../shared/api/types";
 

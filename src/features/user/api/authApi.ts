@@ -1,5 +1,5 @@
-import { IUser } from "../../../models";
 import { apiSlice } from "../../../shared/api/apiSlice";
+import { User } from "../types";
 
 export interface LoginInput {
   email: string;
@@ -8,7 +8,7 @@ export interface LoginInput {
 
 export interface LoginResponse {
   accessToken: string;
-  user: IUser;
+  user: User;
 }
 
 export interface RegisterInput {

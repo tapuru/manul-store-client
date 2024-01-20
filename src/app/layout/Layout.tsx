@@ -1,7 +1,7 @@
 import React from 'react';
 import cl from "./Layout.module.css";
-import { Footer } from '../../wigets/footer';
-import { Header } from '../../wigets/header';
+import { Footer } from '../../widgets/footer';
+import { Header } from '../../widgets/header';
 
 interface LayoutProps {
   header?: React.ReactNode;

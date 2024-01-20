@@ -2,7 +2,7 @@ import { useAppSelector } from "../../app/store";
 import { selectCurrentCatalogCategory } from "../../features/catalog/model/catalogSlice";
 import { ProductSlider, useGetProductsQuery } from "../../features/product";
 import { AppText, Button, Loader, Section } from "../../shared/components/ui";
-import cl from "./ProductDisplay.module.css";
+import cl from "./CategoryProducts.module.css";
 
 
 interface ProductsRowProps {
