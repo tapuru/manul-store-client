@@ -1,0 +1,47 @@
+:root{
+  --color-primary: #fff;
+  --color-secondary-1: #DB4444;
+  --color-secondary-1-hover: #d86c6c;
+  --color-secondary-2: #F5F5F5;
+  --color-secondary-3: #FEFAF1;
+
+  /*--bg--*/
+  --color-background-white: #fff;
+  --color-background-white-hover: #ececec;
+  --color-background-black: #212121;
+
+  /*--text--*/
+  --color-text-white: #FAFAFA;
+  --color-text-gray: #7D8184;
+  --color-text-black: #212121;
+
+  /*--feedback--*/
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #F43F5E;
+  --color-background-error: #fdc0c0;
+
+  /*--design--*/
+  --border-radius: 4px;
+  --shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+  --shadow-big: 0px 1px 16px 0px rgba(0, 0, 0, 0.12);
+  --transition: 0.08s ease-out;
+
+
+  /*--sizes--*/
+  --header-height: 84px;
+  --container-width: 1560px;
+
+  /*--z-indexes--*/
+  --layer-bottom: 0;
+  --layer-1: 10;
+  --layer-2: 20;
+  --layer-3: 30;
+  --layer-4: 40;
+  --layer-5: 50;
+  --layer-6: 60;
+  --layer-7: 70;
+  --layer-8: 80;
+  --layer-9: 90;
+  --layer-top: 100;
+}

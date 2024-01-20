@@ -1,0 +1,19 @@
+.wrapper {
+  display: none;
+
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  transition: background 1s linear;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--layer-7);
+}
+
+.wrapper._active {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4)
+}

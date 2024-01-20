@@ -1,0 +1,25 @@
+@import "./reset.css";
+@import "./vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 140%;
+  color: var(--color-text-black);
+  overflow-x: hidden;
+}
+
+button {
+  border: none
+}
+
+input:focus{
+  outline: none;
+}

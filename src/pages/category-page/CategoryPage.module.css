@@ -1,7 +1,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: 2fr 10fr;
-  column-gap: 48px;
+  column-gap: 62px;
   grid-template-areas: 
     "title title"
     "aside main";
@@ -10,6 +10,7 @@
 .title{
   min-width: 0;
   grid-area: title;
+  margin-bottom: 32px;
 }
 
 .sidebar{
